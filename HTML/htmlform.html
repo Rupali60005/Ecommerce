@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+    <style>
+        .fieldset{
+            width: fit-content;
+        }
+        .div{
+            background-color: yellowgreen;
+            /* width: fit-content;
+            text-align: center; */
+        }
+        /* .div2{
+            background-color: aquamarine;
+        } */
+    </style>
+</head>
+<body>
+   <div class="div2" >
+    <center><h2><span style="background-color: aquamarine;">STUDENT REGISTRATION FORM</span></h2></center></div>
+    <div class="div">
+    <!-- action shows that after clicking the submit button where the data will be stored and what action will be showed to the user-->
+    <center><fieldset class="fieldset">
+        <form name="myform" action="action.html" method="" >
+            <!--   -->
+        
+        <table>
+            <tr>
+                 <td> FIRST NAME:  </td>
+                 <td> <input type="text" name="fname" size=" "></td>
+            </tr>
+            
+            <tr>
+                <td> SECOND NAME:  </td>
+                <td> <input type="text" name="lname" size=" "></td>
+           </tr>
+           
+           <tr>
+            <td> FATHER'S NAME:  </td>
+            <td> <input type="text" name="FATHERname" size=" "></td>
+           </tr>
+       
+       <tr>
+        <td> MOTHER'S NAME:  </td>
+        <td> <input type="text" name="Mname" size=" "></td>
+       </tr>
+
+       <tr>
+        <td>DOB:</td>
+        <td> <input type="date" name="fname" size=" "></td>
+   </tr>
+   <tr>
+    <td> EMAIL:  </td>
+    <td> <input type="email" name="fname" size=" "></td>
+</tr>
+<tr>
+    <td> GENDER:  </td>
+    <td> <input type="radio" name="gender" size=" ">MALE
+    <input type="radio" name="gender" size=" ">FEMALE</td>
+</tr>
+<tr>
+    <td>CHOOSE COURSE: </td>
+    <td><select>
+        <option>SELECT</option>
+        <option>B.tech</option>
+        <option>M.tech</option>
+        <option>BCA</option>
+        <option>MCA</option>
+        
+    </select></td>
+</tr>
+<tr>
+    <td>HOBBIES:</td>
+    <td> <input type="checkbox" name="singing" size=" " >SINGING
+        <input type="checkbox" name="dancing" size=" ">DANCING
+        <input type="checkbox" name="coding" size=" ">CODING
+    </td>
+</tr>
+
+<tr>
+    <td>ADDRESS:</td>
+    <td> <textarea name="address" size=" "></textarea></td>
+</tr>
+<tr>
+    <td>PHOTO</td>
+    <td> <input type="file"></td>
+</tr>
+<tr>
+<td>
+    <td> <input type="submit" name="submit button"></td></td>
+</tr>
+
+
+
+        </table>
+   
+    </form>
+</fieldset>
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.para{
+    border: 2px solid rgb(206, 22, 22);
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+    /* word-wrap: break-word; */
+    word-break:keep-all;
+    word-spacing: 2px;
+    margin-left: 300px;
+    padding-top: 30px;
+
+}
+.para:hover::after{
+    background-color: rgb(245, 245, 100);
+    content: "hello";
+}
+.para:hover::before{
+    background-color: aqua;
+    content: "hello me";
+}
+

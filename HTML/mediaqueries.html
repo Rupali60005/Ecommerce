@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgb(15, 15, 133);
+            /* border: 2px solid black; */
+            height: 400px;
+            width: 100%;
+            text-align: center;
+            /* display: none; */
+            /* display: block; */
+        
+        }
+        @media (max-width:200px) and (min-width:100px)
+        {
+            #i1{
+                display: block;
+            background-color: green;
+        }
+        }
+        @media (max-width:300px) and (min-width:200px)
+        {
+            #i2{
+                display: block;
+            background-color: rgb(233, 186, 19);}
+        }
+        @media (max-width:400px) and (min-width:300px)
+        {
+            #i3{
+                display: block;
+            background-color: rgb(223, 59, 198);}
+        }
+        @media (max-width:500px) and (min-width:400px)
+        {
+            #i4{
+                display: block;
+            background-color: rgb(149, 225, 18);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="i1"> mobile </div>
+        <div class="item" id="i2"> laptop </div>
+        <div class="item" id="i3">widescreen  </div>
+        <div class="item" id="i4"> desktop </div>
+       
+       
+
+    </div>
+</body>
+</html>

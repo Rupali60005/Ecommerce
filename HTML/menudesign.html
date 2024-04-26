@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website menu design</title>
+    <style>
+        img{
+            height:150px;
+            width: 150px;
+        }
+        ul li a{
+            padding: 10px;
+            /* display:inline-block; */
+            text-decoration: none;
+       margin-bottom: 10px;
+        /* list-style: none; */
+        /* float: left; */
+        }
+        .nav li{
+            list-style: none;
+            display: inline-block;
+            /* float:right; */
+            float: left;
+            margin-top: 5px;
+            /* justify-content: space-evenly; */
+
+        }
+        .header{
+            border: 2px solid black;
+            height: 150px;
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(212,0,0,1) 50%, rgba(252,176,69,1) 100%);
+        }
+        .div{
+            display: inline-block;
+            margin-bottom: 60px;
+          justify-content: space-evenly;
+
+        }
+        .anc{
+            justify-content: right;
+            margin-left: 70px;
+            color: black;
+             border: 2px solid black;
+             border-radius: 40%;
+             background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+             font-family: cursive;
+        }
+        .div ul li a:hover{
+       
+            color: rgb(239, 24, 24);
+        }
+        
+        .img1{
+            margin: 5px;
+            width: 400px;
+            height: 200px;
+        }
+        .img2{
+            margin: 5px;
+            width:200px;
+            height: 200px;
+            padding-left: 19px ;
+            padding-right: 19px;
+        }
+        .img3{
+            margin: 5px;
+            width: 300px;
+            height: 200px;
+            padding-right: 100px;
+
+        }
+        .img4{
+            margin: 5px;
+            width:300px;
+            height: 200px;
+        }
+        .img5{
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+
+        }
+        .sec1{
+            text-align: center;
+            display: flex; 
+            margin-top: 30px;
+        }
+     .sec2{
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        display: flex; 
+
+     }
+    .sec3{
+        border: 2px solid black;
+        display: inline-block;
+        border-radius: 10%;
+        margin-top: 50px;
+        justify-content: center;
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        width: 300px;
+        
+     }
+     .sec4{
+        margin-left: 300px;
+        border: 2px solid black;
+        display: inline-block;
+        border-radius: 10%;
+        margin-top: 50px;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,0,127,1) 35%, rgba(0,212,255,1) 100%);
+     }
+    button{
+        background-color: #fbc2eb;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin: 5px;
+        padding: 10px;
+        transition: 0.5s;
+        box-shadow: 0 0 20px #eee;
+        
+        background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    }
+    button:hover {
+            
+            color: #fff;
+            text-decoration: none;
+            background-color: #bfe9ff;
+          } 
+        /* button{
+            background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+          
+            background-size: 200% auto;
+                     
+            
+            border-radius: 10px;
+            display: block;
+        
+            
+        
+          }
+
+          */
+          
+          
+         .footer{
+            background-color: #a6c1ee;
+            text-align: center;
+         }
+         .img7{
+            padding-top: 30px;
+            margin: 50px;
+
+         }
+         .sec{
+            background-color: #f8d6ee;
+         }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <img src="../image/logo.jpg">
+      <div class="div">  <ul class="nav">
+       
+            <li><a class="anc" href="../HTML/bouncingball.html">HOME</a></li>
+            <li><a class="anc" href="">ABOUTUS</a></li>
+            <li><a class="anc" href="">CONTACT</a></li>
+            <li><a  class="anc" href="">MENU</a></li>
+ 
+        </ul></div>
+    </div>
+        <!-- <button id="btn1">SIGNUP</button>
+        <button id="btn2">LOGIN</button> -->
+        <div class="sec">
+        <section class="sec1">
+  <div class="item">
+        <img class="img1" src="../image/Pizza.jpg">
+        <h3>PIZZA</h3>
+        <button>ORDER</button>
+  </div>
+  <br><br>
+  <div class="item">
+    <img class="img2" src="../image/burger.jpg">
+    <h3>BURGER</h3>
+    <button>ORDER</button>
+</div>
+<div class="item">
+    <img  class="img4" src="../image/pasta.jpg">
+    <h3>PASTA</h3>
+    <button>ORDER</button>
+</div>
+</section>
+<section class="sec2">
+<div class="item">
+    <img class="img3" src="../image/juice.jfif">
+    <h3>JUICE</h3>
+    <button>ORDER</button>
+</div>
+
+<div class="item">
+    <img  class="img5" src="../image/coffee.jfif">
+    <h3>COFFEE</h3>
+    <button>ORDER</button>
+</div>
+
+
+</section></div>
+<section class="sec3">
+    <p id="p1">
+        <h2>YOUR FOOD PARTNER!</h2>
+        Discover the extraordinary at Fooddddie's Kitchen. <br>
+        Our commitment to quality and<br>
+      exceptional service makes us your top choice.<br> 
+        Lorem ipsum dolor sit amet,<br>
+      consectetur adipisicing elit.
+    </p>
+   
+</section>
+<section class="sec4">
+    <p id="p1">
+        <h2>YOUR FOOD PARTNER!</h2>
+        Discover the extraordinary at Fooddddie's Kitchen. <br>
+        Our commitment to quality and<br>
+      exceptional service makes us your top choice.<br> 
+        Lorem ipsum dolor sit amet,<br>
+      consectetur adipisicing elit.
+    </p>
+   
+</section>
+<section class="sec4">
+    <p id="p1">
+        <h2>YOUR FOOD PARTNER!</h2>
+        Discover the extraordinary at Fooddddie's Kitchen. <br>
+        Our commitment to quality and<br>
+      exceptional service makes us your top choice.<br> 
+        Lorem ipsum dolor sit amet,<br>
+      consectetur adipisicing elit.
+    </p>
+   
+</section> 
+    <div class="footer">
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam utlorem30
+                lorem30 deserunt dolores dolorem debitis reiciendis ad repudiandae veniam quisquam!</p>
+        </div>
+        <div class="foot">
+            CONTACT US AT : ABC@gmail.com
+        </div>
+        <div id="img7">
+            <img  src="../image/burger.jpg">
+        </div>
+    </div>
+</body>
+</html>

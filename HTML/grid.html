@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1 fr)); --not working--*/
+            grid-gap: 10px;
+            /* grid-auto-rows: 30px;  ----for height*/ 
+             grid-auto-rows: minmax(100px,auto);
+           /* < -----sets height width as per the content----------> */
+            grid-auto-columns: minmax(50px,auto);
+            /* column-gap: 120px;
+            row-gap: 120px; */
+        }
+        .item{
+            background-color: rgb(230, 64, 97);
+            border: 3px solid black;
+            border-radius: 3px;
+          
+
+        }
+        /* #item2{
+            grid-row-start:2 ;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } */
+        #item1{
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+       #item1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+       }
+       .nested{
+        border: 3px solid greenyellow;
+        background-color: rgb(233, 246, 246);
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1" >
+            <div class="nested">dabbe me dabba 1</div>
+            <div class="nested">dabbe me    `` dabba 2</div>
+            <div class="nested">dabbe me dabba 3</div>
+        </div>
+        <!-- <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero, culpa distinctio in odit pariatur cupiditate maiores doloremque atque recusandae repudiandae nihil, nisi qui veniam tenetur quia vel deserunt, fugit adipisci rerum. Commodi molestiae quam fuga quidem vel dolor. Similique alias tenetur itaque, rerum, quo maiores laborum corrupti, delectus assumenda necessitatibus exercitationem excepturi illum officia perspiciatis sed vel quam. Ipsam vitae ipsum, cupiditate consequuntur iusto repudiandae architecto sit quidem molestias et, magnam totam assumenda quis recusandae unde corrupti atque soluta reiciendis. Consequatur asperiores quibusdam vel natus rem at fuga reprehenderit? Quidem, eius. Ducimus iusto fugiat voluptas beatae optio ipsa velit.</div> -->
+        <div class="item" id="item2">box 2</div>
+        <div class="item">box 3</div>
+        <div class="item">box 4</div>
+        <div class="item">box 5</div>
+        
+    </div>
+</body>
+</html>

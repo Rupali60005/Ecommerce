@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+         height: 400px;
+         width: 40%;
+         border: 4px solid greenyellow;
+         background-color: aquamarine;
+         text-align: center;
+         display: block;
+         /* justify-content: center; */
+          animation: ani1;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+        @keyframes ani1{
+            /* from{
+                background-color: rgb(246, 102, 102);
+                height: 10px;
+                width: 20%;
+            }
+            to{
+                background-color: rgb(31, 183, 230);
+                height: 100px;
+                width: 50%;
+            } */
+            0%{
+                background-color: rgb(185, 232, 18);
+                height: 10px;
+                width: 20%;
+            }
+            25%{
+                background-color: rgb(18, 232, 36);
+                height: 500px;
+                width: 30%;
+            }
+            50%{
+                background-color: rgb(240, 50, 76);
+                height: 30px;
+                width: 50%;
+            }
+            70%{
+                background-color: rgb(240, 50, 76);
+                height: 10px;
+                width: 100%;
+            }
+            100%{
+                background-color: rgb(240, 50, 76);
+                height: 600px;
+                width: 50%;
+                border-radius: 50%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>
+        heading
+    </h1>
+    </div>
+</body>
+</html>

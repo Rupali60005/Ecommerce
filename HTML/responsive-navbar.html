@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>"
+    <style>
+        body{
+            background: url(../image/marine.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100VH;
+            width: 100%;
+           
+        }
+        .header{
+            position: fixed;
+            
+            left: 0;
+            width: 100%;
+            display: flex;
+            height: 70px;
+
+            justify-content: space-between;
+            /* background-color: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(50px); */
+            z-index: 100 ;
+        }
+        .header::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            
+            top: 0;
+           left: 0;
+          background-color: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(50px); 
+
+        }
+        .logo{
+            font-size: 2rem;
+            text-decoration: none;
+            font-family: cursive;
+            font-weight: 200;
+            color: rgb(245, 243, 243);
+            margin-left: 2rem;
+            justify-content: center;
+        }
+        .navbar a{
+            width: 90%;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right:2rem;
+            color: rgb(242, 234, 234);
+            font-family: cursive;
+            justify-content: space-between;
+            /* text-align: center;
+            align-items: center; */
+            margin-top: 2rem;
+            /* margin-right: 1.5rem; */
+        }
+        #check{
+            display: none;
+        }
+        .icons{
+           font-size: 1.8rem; 
+           color: aliceblue;
+           cursor: pointer;
+           display: none;
+           right: 5%;
+        }
+        /* .contact{
+            margin-right: 1rem;
+        } */
+
+        /* ----------------BREAKPOINTS-------------------- */
+        @media (max-width: 885px)
+        {
+            .header{
+              height: 70px;
+              padding: 0.5rem 5%;
+            }
+        }
+        @media (max-width: 885px)
+        {
+            .icons{
+          /* display: block; */
+          display: inline-flex;
+          margin-right:5rem;
+            }
+
+            #check:checked~.icons #menu{
+display: none;
+            }
+
+            .icons #cross{
+                display: block;
+            }
+            .navbar{
+                box-shadow: 0.5rem 1rem rgb(0,0,0,.1) ;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 17rem;
+                color: black;
+                /* background-color: rgb(32, 33, 33); */
+                background-color: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(50px);
+            }
+            .navbar a{
+                display: block;
+                font-size: 1rem;
+                margin: 1.5rem 0;
+                text-align: center;
+
+            }
+         }
+        
+    </style>
+</head>
+<body>
+    <!-- -------------------------navbar---------------------- -->
+
+    <header class="header">
+        <a href="#" class="logo" >LOGO</a>
+<input type="checkbox" id="check">
+        <label for="check" class="icons">
+
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="cross"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUTUS</a>
+            <a href="#">GALLERY</a>
+            <a href="#">SERVICES</a>
+            <a href="#" class="contact">CONTACTUS</a>
+            
+        </nav>
+    </header>
+</body>
+</html>

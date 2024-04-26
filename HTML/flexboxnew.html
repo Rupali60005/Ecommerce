@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body{
+
+    padding: 0 20px 30px 0;
+    line-height: 1.4;
+  }
+  .flexcontainer{
+    display: flex;
+    width: 100px;
+ height: 500px;
+ border: 2px solid black;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse;
+    flex-direction: row-reverse; */
+    flex-wrap:wrap;
+    /* align-content: flex-end; */
+ /* align-content: flex-start; */
+   /* align-items: center; */
+   /* align-items: end; */
+   align-content: stretch;
+  }
+  .flexitem{
+    height: 85px;
+
+    font-size: 2cm;
+    color: antiquewhite;
+    text-align: center;
+   
+  }
+  #f1{
+ background-color: aqua;
+ 
+ border: 2px solid black;
+
+ 
+
+  }
+  #f2{
+    background-color: rgb(241, 77, 77);
+
+ border: 2px solid black;
+}
+#f3{
+    background-color: rgb(24, 238, 77);
+  
+ border: 2px solid black;
+}
+#f4{
+    background-color: rgb(135, 81, 245);
+
+ border: 2px solid black;
+}
+#f5{
+    background-color: rgb(42, 234, 234);
+ 
+ border: 2px solid black;
+}
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+        <div class="flexitem" id="f1"> 1 </div>
+        <div class="flexitem" id="f2"> 2</div>
+        <div class="flexitem" id="f3"> 3</div>
+        <div class="flexitem" id="f4"> 4</div>
+        <div class="flexitem" id="f5"> 5</div>
+        <div class="flexitem" id="f5"> 6</div>
+        <div class="flexitem" id="f5"> 7</div>
+        <div class="flexitem" id="f5"> 8</div>
+        <div class="flexitem" id="f5"> 9</div>
+        <div class="flexitem" id="f5"> 10</div>
+    </div>
+</body>
+</html>

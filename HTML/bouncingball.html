@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,0,127,1) 35%, rgba(0,212,255,1) 100%);
+  
+ }
+ /* .outer{
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 100px;
+    background-color: wheat;
+    /* transform: translate(-50%,-50%);  
+
+
+ } */
+ .ball{
+height: 150px;
+width: 150px;
+position: absolute;
+background-color: rgb(204, 207, 199);
+border-radius: 50%;
+bottom: 0%;
+right: 0%;
+animation: movement 10s 3;
+ }
+ 
+@keyframes movement{
+    0%{
+        /* transform: rotateZ(-360deg); */
+         top: 0%;
+         right: 93%;
+    }
+    12.5%{
+         top: 82%;
+         right: 93%;
+    }
+    25%{
+         top: 20.5%;
+         right: 77.5%;
+    }
+    37.5%{
+         top: 82%;
+         right: 62%;
+    }
+    50%{
+         top: 35.87%;
+         right: 46.5%;
+    }
+    62.5%{
+         top: 82%;
+         right: 31%;
+    }
+    75%{
+         top: 47.4%;
+         right: 15.5%;
+    }
+    100%{
+         top: 82%;
+         right: 0%;
+    }
+    
+ }
+ 
+    </style>
+</head>
+<body>
+    
+        <div class="ball">
+</div>
+
+
+        
+</body>
+</html>

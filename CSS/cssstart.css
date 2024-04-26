@@ -1,0 +1,10 @@
+.border{
+    margin: 20px;
+    border-style: dashed;
+border-color: aquamarine;
+border-width: 10px;
+
+}
+.border{
+    background-image:url(../image/flower.jfif);
+}
